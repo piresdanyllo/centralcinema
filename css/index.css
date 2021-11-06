@@ -1,0 +1,131 @@
+body {
+    font-family: "Poppins", "sans-serif";
+    color: #fff;
+}
+
+main {
+    background-color: #202931;
+}
+
+header {
+    background-color: #202931;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: auto;
+    background-color: #202931;
+}
+
+.dropdown-item:hover {
+    background-color: #000 !important;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+#banner {
+    background-image: url(../assets/banner_pag_index.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 94vh;
+}
+
+#banner h1,
+#banner h2 {
+    color: #ff1515;
+}
+
+#banner h1 {
+    font-size: 7rem;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-weight: bold;
+}
+
+#banner h2 {
+    font-size: 3rem;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: start;
+}
+
+img {
+    width: 300px;
+}
+
+.footzao {
+    background-color: #f3f4f5;
+    color: #141414;
+}
+
+.card-body {
+    height: 160px;
+}
+
+/* .card-img-top {
+    height: 232.88px;
+} */
+
+.card-img-top {
+    height: 232.88px;
+}
+
+/* Footer */
+
+#container-social {
+    border-bottom: 2px solid #ff1515;
+    padding-bottom: 20px;
+}
+
+#img-title-social {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+#img-social {
+    width: 48px;
+}
+
+#title-social,
+#address-social {
+    text-decoration: none;
+    color: #141414;
+}
+
+.title-nav {
+    display: flex;
+    margin-left: 30px;
+    padding: 0;
+}
+
+#container-nav {
+    margin-top: 20px;
+}
+
+.nav-list{
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.nav-list li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.title-nav {
+    text-decoration: none;
+    color: #141414;
+}
