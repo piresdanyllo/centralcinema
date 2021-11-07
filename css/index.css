@@ -54,8 +54,8 @@ header {
     text-align: start;
 }
 
-.link-trailer{
-    text-decoration: none;    
+.link-trailer {
+    text-decoration: none;
 }
 
 img {
@@ -63,16 +63,15 @@ img {
     cursor: pointer;
 }
 
-
 .card-body {
     height: 180px;
     cursor: pointer;
 }
 
-
 .card-img-top {
     height: 232.88px;
 }
+
 
 /* Footer */
 
@@ -90,14 +89,12 @@ img {
     text-decoration: none;
     display: flex;
     justify-content: center;
-
 }
 
 .social-body {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-
 }
 
 #img-social {
@@ -112,15 +109,16 @@ img {
 
 .title-nav {
     display: flex;
-    margin-left: 30px;
+    margin-left: 51px;
     padding: 0;
 }
 
 #container-nav {
     margin-top: 20px;
+    margin-left: 50px;
 }
 
-.nav-list{
+.nav-list {
     padding-left: 0;
     margin-top: 20px;
 }
@@ -135,44 +133,49 @@ img {
     color: #141414;
 }
 
+
 /* Responvididade */
 
-@media (max-width:1440px){
+@media (max-width:1440px) {
     #banner h1 {
         font-size: 6rem;
     }
-    
     #banner h2 {
         font-size: 2.3rem;
     }
 }
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
     #banner h1 {
         font-size: 5rem;
     }
-    
     #banner h2 {
         font-size: 1.9rem;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     #banner h1 {
         font-size: 4rem;
     }
-    
     #banner h2 {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width:425px){
+@media (max-width:425px) {
     #banner h1 {
         text-align: center;
     }
-    
     #banner h2 {
         text-align: center;
     }
 }
+
+
+/* @media(max-width:643px) {
+    .nav-list {
+        padding-left: 0;
+        margin-top: -520px;
+    }
+} */
