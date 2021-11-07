@@ -1,12 +1,3 @@
-/* .imgFundoBanner{
-    border: 1px solid black;
-    background-image: url("../assets/banner_pag_parceiros.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    padding: 0px;
-} */
-
 /* Menu dropdown */
 .dropdown-menu[data-bs-popper]{
     left: auto;
@@ -22,6 +13,7 @@
 }
 
 
+/* Página Cadastro */
 .imgFundoCadastro{
     border: 1px solid black;
     background-image: url("../assets/fundo_pipoca.gif");
