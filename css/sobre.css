@@ -110,3 +110,50 @@ footer {
     text-decoration: none;
     color: #141414;
 }
+
+
+
+
+
+#imgBanner{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+}
+
+footer{
+    border: solid 2px black;
+}
+
+
+
+.card-img-top{
+    width: 20px;
+    height: 20px;
+    
+}
+#mensagens{
+    background-color:#202931;
+    align-items: center;
+    
+    
+}
+.card-text{
+    font-size: smaller;
+    
+   
+}
+.quote{
+    font-size: small;
+    color: #fff
+
+}
+.card-text, .card-title{
+    color: #fff;
+}
+@media (max-width:425px) {
+    #imgBanner{
+        width:100% ;
+        height: auto;
+    }
+}
