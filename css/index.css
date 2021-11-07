@@ -53,28 +53,32 @@ header {
     text-align: start;
 }
 
+.link-trailer{
+    text-decoration: none;    
+}
+
 img {
     width: 300px;
+    cursor: pointer;
 }
 
-.footzao {
-    background-color: #f3f4f5;
-    color: #141414;
-}
 
 .card-body {
-    height: 160px;
+    height: 180px;
+    cursor: pointer;
 }
 
-/* .card-img-top {
-    height: 232.88px;
-} */
 
 .card-img-top {
     height: 232.88px;
 }
 
 /* Footer */
+
+.footzao {
+    background-color: #f3f4f5;
+    color: #141414;
+}
 
 #container-social {
     border-bottom: 2px solid #ff1515;
@@ -128,4 +132,36 @@ img {
 .title-nav {
     text-decoration: none;
     color: #141414;
+}
+
+/* Responvididade */
+
+@media (max-width:1440px){
+    #banner h1 {
+        font-size: 6rem;
+    }
+    
+    #banner h2 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width:1024px){
+    #banner h1 {
+        font-size: 5rem;
+    }
+    
+    #banner h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width:768px){
+    #banner h1 {
+        font-size: 4rem;
+    }
+    
+    #banner h2 {
+        font-size: 1.5rem;
+    }
 }
