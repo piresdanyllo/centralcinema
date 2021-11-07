@@ -39,17 +39,18 @@ header {
 
 #banner h1 {
     font-size: 7rem;
-    position: absolute;
+    /* position: absolute;
     top: 20%;
-    left: 10%;
+    left: 10%; */
+    margin-top: 7.5rem;
     font-weight: bold;
 }
 
 #banner h2 {
     font-size: 3rem;
-    position: absolute;
+    /* position: absolute;
     top: 40%;
-    left: 10%;
+    left: 10%; */
     text-align: start;
 }
 
@@ -163,5 +164,15 @@ img {
     
     #banner h2 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width:425px){
+    #banner h1 {
+        text-align: center;
+    }
+    
+    #banner h2 {
+        text-align: center;
     }
 }
