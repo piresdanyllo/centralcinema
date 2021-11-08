@@ -16,7 +16,8 @@
 /* Página Cadastro */
 .imgFundoCadastro{
     border: 1px solid black;
-    background-image: url("../assets/fundo_pipoca.gif");
+    /*background-image: url("../assets/fundo_pipoca.gif");*/
+    background-color: #212529;
     background-size: contain;
     opacity: 0.9;
 
@@ -37,6 +38,7 @@
 
 .botao{
     width: 150px;
+    margin-left: 6px;
 }
 
 /* Página Index */

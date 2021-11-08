@@ -118,13 +118,25 @@
                             <label>Faça seu login</label>
 
                             <div class="mb-3 mt-3">
-                                <input type="email" class="form-control" id="txtLogin" placeholder="Digite seu e-mail"
-                                    required>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                          </svg>
+                                    </span>
+                                        <input type="emailL" class="form-control" id="txtLoginLogar" placeholder="Digite seu e-mail" required>
+                                    </div>
                             </div>
 
                             <div class="mb-3">
-                                <input type="password" class="form-control" id="txtSenha" placeholder="Digite sua senha"
-                                    required>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                                            <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                          </svg>
+                                    </span>
+                                        <input type="password" class="form-control" id="txtSenhaLogar" placeholder="Digite sua senha" required>
+                                    </div>
                             </div>
 
                             <div class="row">
@@ -141,7 +153,7 @@
 
                                 <!-- Entrar -->
                                 <div class="col-lg-6">
-                                    <input class="btn btn-secondary mt-3 botao" type="submit" value="Entrar">
+                                    <input class="btn btn-secondary mt-3 botao" type="button" value="Entrar" onclick="logar()" id="btnEntrar">
                                 </div>
                             </div>
 
@@ -151,7 +163,7 @@
                                     <input class="btn btn-primary mt-5 botao" type="button" value="facebook">
                                 </div>
                                 <div class="col-6">
-                                    <input class="btn btn-danger mt-5 botao" type="button" value="google">
+                                    <input class="btn btn-danger mt-5 botao" type="button" value="google" onclick="mostrarModal()">
                                 </div>
                             </div>
 
@@ -164,29 +176,58 @@
 
                     <!-- Cadastro -->
                     <div class="col-lg-4 col-md-6 col-sm-12 borda">
-                        <form name="formCadastro">
+                        <form name="formCadastro" action="post">
                             <p><b>É novo por aqui ?</b></p>
 
                             <label>Faça seu cadastro</label>
 
+                            <div class="form-group">
+    
                             <div class="mb-3 mt-3">
-                                <input type="text" class="form-control" id="txtNome" placeholder="Digite seu nome"
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                          </svg>
+                                      </span>
+                                <input type="text" class="form-control left-border-none" id="txtNome" placeholder="Digite seu nome"
                                     required>
+                                </div>
                             </div>
 
                             <div class="mb-3 mt-3">
-                                <input type="text" class="form-control" id="txtSobreNome"
-                                    placeholder="Digite seu sobrenome" required>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                                          </svg>
+                                    </span>
+                                        <input type="text" class="form-control" id="txtSobreNome" placeholder="Digite seu sobrenome" required>
+                                    </div>
                             </div>
 
                             <div class="mb-3 mt-3">
-                                <input type="email" class="form-control" id="txtLoginCad" placeholder="Digite seu e-mail"
-                                    required>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                          </svg>
+                                    </span>
+                                        <input type="email" class="form-control " id="txtLoginCad" placeholder="Digite seu e-mail" required>
+                                    </div>
                             </div>
 
                             <div class="mb-3">
-                                <input type="password" class="form-control" id="txtSenhaCad" placeholder="Digite sua senha"
-                                    required>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                                            <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                          </svg>
+                                    </span>
+                                        <input type="password" class="form-control" id="txtSenhaCad" placeholder="Digite sua senha" required>
+                                    </div>
                             </div>
 
                             <div class="row">
@@ -195,7 +236,7 @@
 
 
                                     <!-- Button trigger modal -->
-                                    <button type="button" onclick="enviarFormulario()" id="btoCadastrar" class="btn btn-secondary mt-3 botao">
+                                    <button type="button" onclick="enviarFormulario()" id="btnCadastrar" class="btn btn-secondary mt-3 botao">
                                         Cadastrar
                                     </button>
                                     <!-- <input class="btn btn-secondary mt-3 botao" type="submit" value="Cadastrar" onclick="teste()" id="btoCadastrar"> -->
@@ -203,7 +244,7 @@
 
                                 <!-- Botão limpar -->
                                 <div class="col-6">
-                                    <input class="btn btn-secondary mt-3 botao" type="reset" value="Limpar" id="btoLimpar">
+                                    <input class="btn btn-secondary mt-3 botao" type="reset" value="Limpar" id="btnLimpar" onclick="resetarCorBorda()">
                                 </div>
                             </div>
 
@@ -331,6 +372,11 @@
 
     <!-- Script -->
     <script src="../js/jsCadastro.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
 
 </body>
 
