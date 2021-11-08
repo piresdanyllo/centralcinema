@@ -16,7 +16,7 @@
 /* Página Cadastro */
 .imgFundoCadastro{
     border: 1px solid black;
-    /*background-image: url("../assets/fundo_pipoca.gif");*/
+    background-image: url("../assets/fundo_pipoca.gif");
     background-color: #212529;
     background-size: contain;
     opacity: 0.9;
