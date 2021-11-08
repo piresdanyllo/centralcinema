@@ -31,18 +31,6 @@ body {
     height: 25rem;
 }
 
-footer {
-    border: solid 2px black;
-}
-
-
-/* main{
-    border: solid 2px black;
-    height:500px;
-    width: 100%;
-
-}  */
-
 .card-img-top {
     width: 20px;
     height: 20px;
@@ -121,9 +109,7 @@ footer {
     display: flex;
 }
 
-footer{
-    border: solid 2px black;
-}
+
 
 
 
@@ -151,7 +137,7 @@ footer{
 .card-text, .card-title{
     color: #fff;
 }
-@media (max-width:425px) {
+@media (max-width:768px) {
     #imgBanner{
         width:100% ;
         height: auto;
