@@ -1,5 +1,5 @@
 <h1 align="center">Central Cinema 🎥</h1>
-<h3 align="center">Landing page de cinema.</h3>
+<h3 align="center">Landing page de cinema..</h3>
 
 ---
 
