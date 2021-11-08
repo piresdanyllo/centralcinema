@@ -20,20 +20,21 @@
     background-color: var(--corprimaria);
 }
 
+
 /* Menu dropdown */
-.dropdown-menu[data-bs-popper]{
+
+.dropdown-menu[data-bs-popper] {
     left: auto;
     background-color: #202931;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: #000 !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: #fff;
 }
-
 
 
 /* Home */
@@ -42,6 +43,7 @@
     background-image: url(/assets/banner_parceiros.png);
     background-position: center;
     background-position-y: center;
+    background-attachment: fixed;
 }
 
 .titulo-plano {
@@ -105,9 +107,10 @@
     padding: 5px;
 }
 
+
 /* Footer */
 
-.footzao{
+.footzao {
     background-color: #f3f4f5;
 }
 
@@ -120,14 +123,12 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
-
 }
 
 .social-body {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-
 }
 
 #img-social {
@@ -150,7 +151,7 @@
     margin-top: 20px;
 }
 
-.nav-list{
+.nav-list {
     padding-left: 0;
     margin-top: 20px;
 }
