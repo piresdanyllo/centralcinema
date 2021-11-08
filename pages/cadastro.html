@@ -118,12 +118,12 @@
                             <label>Faça seu login</label>
 
                             <div class="mb-3 mt-3">
-                                <input type="email" class="form-control" id="txtLogin" placeholder="Digite seu e-mail"
+                                <input type="emailL" class="form-control" id="txtLoginLogar" placeholder="Digite seu e-mail"
                                     required>
                             </div>
 
                             <div class="mb-3">
-                                <input type="password" class="form-control" id="txtSenha" placeholder="Digite sua senha"
+                                <input type="password" class="form-control" id="txtSenhaLogar" placeholder="Digite sua senha"
                                     required>
                             </div>
 
@@ -141,7 +141,7 @@
 
                                 <!-- Entrar -->
                                 <div class="col-lg-6">
-                                    <input class="btn btn-secondary mt-3 botao" type="submit" value="Entrar">
+                                    <input class="btn btn-secondary mt-3 botao" type="button" value="Entrar" onclick="logar()" id="btnEntrar">
                                 </div>
                             </div>
 
@@ -151,7 +151,7 @@
                                     <input class="btn btn-primary mt-5 botao" type="button" value="facebook">
                                 </div>
                                 <div class="col-6">
-                                    <input class="btn btn-danger mt-5 botao" type="button" value="google">
+                                    <input class="btn btn-danger mt-5 botao" type="button" value="google" onclick="mostrarModal()">
                                 </div>
                             </div>
 
@@ -164,7 +164,7 @@
 
                     <!-- Cadastro -->
                     <div class="col-lg-4 col-md-6 col-sm-12 borda">
-                        <form name="formCadastro">
+                        <form name="formCadastro" action="post">
                             <p><b>É novo por aqui ?</b></p>
 
                             <label>Faça seu cadastro</label>
@@ -175,12 +175,11 @@
                             </div>
 
                             <div class="mb-3 mt-3">
-                                <input type="text" class="form-control" id="txtSobreNome"
-                                    placeholder="Digite seu sobrenome" required>
+                                <input type="text" class="form-control" id="txtSobreNome" placeholder="Digite seu sobrenome" required>
                             </div>
 
                             <div class="mb-3 mt-3">
-                                <input type="email" class="form-control" id="txtLoginCad" placeholder="Digite seu e-mail"
+                                <input type="email" class="form-control " id="txtLoginCad" placeholder="Digite seu e-mail"
                                     required>
                             </div>
 
@@ -195,7 +194,7 @@
 
 
                                     <!-- Button trigger modal -->
-                                    <button type="button" onclick="enviarFormulario()" id="btoCadastrar" class="btn btn-secondary mt-3 botao">
+                                    <button type="button" onclick="enviarFormulario()" id="btnCadastrar" class="btn btn-secondary mt-3 botao">
                                         Cadastrar
                                     </button>
                                     <!-- <input class="btn btn-secondary mt-3 botao" type="submit" value="Cadastrar" onclick="teste()" id="btoCadastrar"> -->
@@ -203,7 +202,7 @@
 
                                 <!-- Botão limpar -->
                                 <div class="col-6">
-                                    <input class="btn btn-secondary mt-3 botao" type="reset" value="Limpar" id="btoLimpar">
+                                    <input class="btn btn-secondary mt-3 botao" type="reset" value="Limpar" id="btnLimpar" onclick="resetarCorBorda()">
                                 </div>
                             </div>
 
