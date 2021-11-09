@@ -40,7 +40,7 @@
 /* Home */
 
 .home {
-    background-image: url(/assets/banner_parceiros.png);
+    background-image: url(../assets/banner_parceiros.png);
     background-position: center;
     background-position-y: center;
     background-attachment: fixed;
